@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>  Covid Tracker</title>
+    <link rel = "icon" href = "coronavirus.png" type = "image/x-icon">
+    <style>
+      
+
+        .covid{
+            padding: 20px;
+           
+            margin-top: 100px;
+            
+        }
+        .heading{
+            font-size: large;
+            text-align: center;
+            padding: 20px;
+
+        }
+        .footer{
+          padding-top: 100px;
+          margin-top: 13%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="covid">
+        <div class="heading">
+            <h1><strong>COVID-19 TRACKER</strong></h1>
+        </div>
+    <nav class="level is-mobile">
+        <div class="level-item has-text-centered">
+          <div>
+            <p style="color: rgb(18, 170, 69);" class="heading">Last Updated</p>
+            <p style="color: rgb(13, 56, 5);" class="title">{{totalinfected}} BDT</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p style="color: tomato;"class="heading">Total Deaths</p>
+            <p style="color: tomato;"class="title">{{content}}</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p style="color: rgb(18, 170, 69);"class="heading">Total Recovered</p>
+            <p style="color: greenyellow;" class="title">{{totalrecovered}}</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">New Cases Today</p>
+            <p class="title">+{{casesToday}}</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+              <p style="color: tomato;" class="heading">New Deaths Today</p>
+              <p  style="color: tomato;" class="title"> +{{deathToday}}</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p style="color: rgb(18, 170, 69);" class="heading">Recovered Today</p>
+              <p style="color: greenyellow;" class="title">+{{recoveredToday}}</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p style="color: rgb(192, 170, 46);"class="heading">Active Cases</p>
+              <p style="color: rgb(250, 227, 96);" class="title">{{activeCases}}</p>
+            </div>
+          </div>
+          
+          </div>  
+      </nav>
+    </div>
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Covid Tracker </strong> by <a href="https://twitter.com/rajib_hawlader"> Md. Rajib Hawlader</a> . The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php"> under MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+</html>
